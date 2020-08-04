@@ -1,0 +1,16 @@
+.header {
+    height: 8vh;
+    background-color: darkslateblue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-logo {
+    font-size: 2em;
+}
+
+.header-logo:hover {
+    cursor: pointer;
+    color: goldenrod;
+}
