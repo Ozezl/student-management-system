@@ -1,0 +1,72 @@
+.modal {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+}
+
+.modal1-wrapper, .modal2-wrapper, .modal3-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 10;
+}
+
+.modal1-wrapper-box, .modal2-wrapper-box, .modal3-wrapper-box {
+    height: 50%;
+    width: 30%;
+    background-color: white;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+}
+
+.modal1-wrapper-box input, .modal2-wrapper-box input, .modal3-wrapper-box input {
+    display: block;
+    margin-bottom: 5px;
+    height: 5%;
+    box-sizing: border-box;
+    width: 50%;
+}
+
+.modal1-wrapper-box label, .modal2-wrapper-box label, .modal3-wrapper-box label {
+    font-size: 1.3em;
+}
+
+.button-close {
+    position: absolute;
+    top: 1%;
+    right: 2%;
+    transform: rotate(45deg);
+    font-size: 2.1em;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.button-close:hover {
+    cursor: pointer;
+    font-size: 2.2em;
+}
+
+@media screen and (max-width: 720px) {
+    .modal1-wrapper, .modal2-wrapper, .modal3-wrapper {
+        width: 1100px;       
+        position: fixed;
+    }
+
+    .modal1-wrapper-box, .modal2-wrapper-box, .modal3-wrapper-box {
+        height: 500px;
+        width: 300px;
+    }
+}

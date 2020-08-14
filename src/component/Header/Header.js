@@ -1,10 +1,11 @@
 import React from 'react'
 import './Header.css'
+import Logo from '../Logo/Logo'
 
 function Header() {
   return (
     <div className="header">
-        <div className="header-logo">Student MA</div>
+        <Logo/>
     </div>
   );
 }

@@ -1,0 +1,8 @@
+.logo-placeholder {
+    font-size: 2.3em;
+    color: #ffffff;
+}
+
+.logo-placeholder:hover {
+    cursor: pointer;
+}
