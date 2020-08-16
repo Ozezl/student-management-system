@@ -1,0 +1,13 @@
+.card {
+    background-color: #166BB5;
+    color: #ffffff;
+    padding: 3px 10px 3px 10px;
+    border-radius: 10px;
+    width: 85%;
+    height: 25%;
+    margin-bottom: 8px;
+}
+
+.card:hover {
+    background-color: #1C89E8;
+}

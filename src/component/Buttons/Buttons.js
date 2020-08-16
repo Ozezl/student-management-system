@@ -1,22 +1,27 @@
 import React from 'react'
 import { AwesomeButton } from "react-awesome-button"
 import './Buttons.css'
-import styles from "react-awesome-button/src/styles/themes/theme-red"
+import "react-awesome-button/dist/styles.css"
+
 
 function Buttons(props) {
   return (
     <div className="buttons">
-        <AwesomeButton  cssModule={styles} type="primary" size="large" onPress={() => props.createHandler()}>
-            Add Student
-        </AwesomeButton>
-
-        <AwesomeButton  cssModule={styles} type="primary" size="large" onPress={() => props.deleteHandler()}>
-            Delete Student
-        </AwesomeButton>
-
-        <AwesomeButton  cssModule={styles} type="primary" size="large" onPress={() => props.updateHandler()}>
-            Update Student
-        </AwesomeButton>
+        <div>
+          <AwesomeButton type="primary" size="large" onPress={() => props.createHandler()}>
+              Add Student
+          </AwesomeButton>
+        </div>
+        <div>
+          <AwesomeButton type="primary" size="large" onPress={() => props.deleteHandler()}>
+              Delete Student
+          </AwesomeButton>
+        </div>
+        <div>
+          <AwesomeButton type="primary" size="large" onPress={() => props.updateHandler()}>
+              Update Student
+          </AwesomeButton>
+        </div>
     </div>
   );
 }

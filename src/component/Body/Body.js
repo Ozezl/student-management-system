@@ -1,10 +1,12 @@
 import React from 'react'
 import {useEffect} from 'react'
 import {useState} from 'react'
+import Swal from 'sweetalert2'
 import Buttons from '../Buttons/Buttons'
 import Modal from '../Modal/Modal'
 import Table from '../Table/Table'
 import './Body.css'
+import StudentList from '../StudentList/StudentList'
 
 function Body() {
     const URL = 'https://salty-reaches-26979.herokuapp.com/students/'
@@ -28,7 +30,11 @@ function Body() {
                 setIsLoading(false)
             },
             (e) => {
-                console.log(e)
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Something went wrong!' + e,
+                  })
             })
     }, [])
 
@@ -72,16 +78,34 @@ function Body() {
 
         fetch(URL, requestOptions)
             .then(response => response.json())
-            .then(data => console.log(data))
+            .then(data => console.log(data), 
+              (e) => {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Something went wrong!' + e,
+                  })
+              })
 
         window.location.reload()    //hard reaload, temp fix for form autosubmit
     }
 
     function httpDeleteHandler() {
-        fetch(URL + id, {
-            method: 'delete'
-          })
-          .then(response => response.json())
+        const requestOptions = {
+            method: 'delete',
+            headers: { 'Content-Type': 'application/json' },
+        };
+
+        fetch(URL + id, requestOptions)
+            .then(response => response.json())
+            .then(data => alert(data),
+            (e) => {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Something went wrong!' + e,
+                  })
+            })
 
         setNull()
 
@@ -122,6 +146,9 @@ function Body() {
         :
         <div className = "body-wrapper">
             <Table 
+                items={items}
+            />
+            <StudentList
                 items={items}
             />
             <div className="body-wrapper-buttons">

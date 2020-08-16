@@ -29,11 +29,11 @@
     }
 
     .body-wrapper-table {
-        width: 720px;
+        width: 100%;
         display: block;
     }
     
     .body-wrapper-buttons {
-        width: 720px;
+        width: 100%;
     }
 }
