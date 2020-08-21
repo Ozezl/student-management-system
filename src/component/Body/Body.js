@@ -7,6 +7,7 @@ import Modal from '../Modal/Modal'
 import Table from '../Table/Table'
 import './Body.css'
 import StudentList from '../StudentList/StudentList'
+import Loading from '../Loading/Loading'
 
 function Body() {
     const URL = 'https://salty-reaches-26979.herokuapp.com/students/'
@@ -142,7 +143,7 @@ function Body() {
         
         {
         isLoading ?
-        <div className="body-placeholder">Is loading...</div>
+        <Loading/>
         :
         <div className = "body-wrapper">
             <Table 
