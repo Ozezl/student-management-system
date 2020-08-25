@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "99a0a5376ac568ed40e58b170f9d4d27",
+    "revision": "d01224b02c9bfc1a032cb929d29b59ad",
     "url": "/student-management-system/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/student-management-system/static/css/2.ecf09bb4.chunk.css"
   },
   {
-    "revision": "6f41301268b5586d3b16",
-    "url": "/student-management-system/static/css/main.5f57faad.chunk.css"
+    "revision": "7ebea4118084a1894290",
+    "url": "/student-management-system/static/css/main.ceba1303.chunk.css"
   },
   {
     "revision": "04db5cb81e5017d610f9",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/student-management-system/static/js/2.bce40db4.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "6f41301268b5586d3b16",
-    "url": "/student-management-system/static/js/main.d98bb8c5.chunk.js"
+    "revision": "7ebea4118084a1894290",
+    "url": "/student-management-system/static/js/main.822d29f9.chunk.js"
   },
   {
     "revision": "2fc9292f7bbb20d38fd4",
