@@ -6,12 +6,10 @@ import "react-awesome-button/dist/styles.css"
 function Modal(props) {
     const modalClassName = props.showModal > 0 ? "modal" : "modalOff"
 
-    function handleClose() {
-        props.deleteHandler();
-    }
+  
 
     return (
-    <div className={modalClassName} onClick={() => handleClose()}>
+    <div className={modalClassName}>
         {
             props.showModal === 1 ?
                 <div className="modal1-wrapper-box">
@@ -25,8 +23,9 @@ function Modal(props) {
  
                   
                 </div>
+            
             :
-            <div></div>
+            <></>
         }
         {
             props.showModal === 2 ?
@@ -52,7 +51,7 @@ function Modal(props) {
                      
                 </div>
             :
-            <div></div>
+            <></>
         }
         {
             props.showModal === 3 ?
@@ -76,7 +75,7 @@ function Modal(props) {
                      
                 </div>
             :
-            <div></div>
+            <></>
         }   
     </div>
   );
